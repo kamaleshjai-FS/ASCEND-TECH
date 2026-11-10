@@ -470,7 +470,7 @@ export const ContactForm = () => {
                 For fast discussions, quick questions, or direct voice notes, message me directly via WhatsApp.
               </p>
               <a
-                href={getWhatsAppUrl("Hi Alex! I visited your portfolio and would like to connect about an inquiry.")}
+                href={getWhatsAppUrl("Hi Ascend Tech! I visited your portfolio and would like to connect about an inquiry.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary direct-wa-btn"
@@ -537,7 +537,7 @@ export const ContactForm = () => {
                   <p>Book a dedicated 20-minute Google Meet or Zoom intro call.</p>
                 </div>
                 <a
-                  href={getWhatsAppUrl("Hi Alex! I'd like to schedule a 20-minute discovery call.")}
+                  href={getWhatsAppUrl("Hi Ascend Tech! I'd like to schedule a 20-minute discovery call.")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="editorial-link"

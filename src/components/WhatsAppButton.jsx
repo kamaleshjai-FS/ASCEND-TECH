@@ -14,7 +14,7 @@ export const WhatsAppButton = () => {
         className="whatsapp-float-btn"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        aria-label="Direct WhatsApp Message to Alex Rivera"
+        aria-label="Direct WhatsApp Message to Ascend Tech"
       >
         <span className="pulse-indicator float-pulse" aria-hidden="true"></span>
         <div className="wa-icon-wrapper">

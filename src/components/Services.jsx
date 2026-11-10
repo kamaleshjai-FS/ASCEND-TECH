@@ -46,7 +46,7 @@ export const Services = () => {
           {SERVICES_DATA.map((service, idx) => {
             const serviceMessage =
               WHATSAPP_CONFIG.serviceMessages[service.serviceKey] ||
-              `Hi Alex! I'd like to discuss ${service.title}.`;
+              `Hi Ascend Tech! I'd like to discuss ${service.title}.`;
 
             return (
               <div 
@@ -139,7 +139,7 @@ export const Services = () => {
                 </ul>
 
                 <a
-                  href={getWhatsAppUrl(`Hi Alex! I'm interested in the ${model.tier} (${model.duration}) engagement model.`)}
+                  href={getWhatsAppUrl(`Hi Ascend Tech! I'm interested in the ${model.tier} (${model.duration}) engagement model.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className={model.recommended ? 'btn-primary model-btn' : 'btn-secondary model-btn'}

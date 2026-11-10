@@ -176,9 +176,9 @@ export const About = () => {
               <div className="about-actions-row">
                 {/* <a
                   href={PERSONAL_INFO.resumePath}
-                  download="Alex_Rivera_Creative_Developer_Resume.pdf"
+                  download="Ascend_Tech_Resume.pdf"
                   className="btn-primary"
-                  aria-label="Download Alex Rivera's Resume PDF"
+                  aria-label="Download Ascend Tech's Resume PDF"
                 >
                   <Download size={16} strokeWidth={2.2} />
                   <span>Download Complete Resume</span>

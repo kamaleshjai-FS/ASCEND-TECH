@@ -447,24 +447,24 @@ export const CONTACT_PRESETS = [
     label: "👗 Dress Shop Meta Ads",
     type: "Digital Marketing & Meta Ads",
     budget: "$1,000 - $3,000",
-    details: "Hi Alex! We run a dress shop / fashion boutique and want to get qualified leads and paying customers through targeted Meta (Facebook & Instagram) ads. We'd like to discuss an ad campaign and WhatsApp lead funnel."
+    details: "Hi Ascend Tech! We run a dress shop / fashion boutique and want to get qualified leads and paying customers through targeted Meta (Facebook & Instagram) ads. We'd like to discuss an ad campaign and WhatsApp lead funnel."
   },
   {
     label: "💻 Software Startup Client Ads",
     type: "B2B Performance Marketing & Ads",
     budget: "$1,000 - $3,000",
-    details: "Hi Alex! We are a software development startup looking to acquire high-value B2B clients and book discovery calls through Google Search and paid ad funnels."
+    details: "Hi Ascend Tech! We are a software development startup looking to acquire high-value B2B clients and book discovery calls through Google Search and paid ad funnels."
   },
   {
     label: "🚀 Full Custom Website Build",
     type: "Full-Stack Custom Web Development",
     budget: "$3,000 - $5,000",
-    details: "Hi Alex! We need a complete, custom-developed website built strictly according to our specific business requirements and needs. We need custom React engineering, top performance, and built-in lead generation."
+    details: "Hi Ascend Tech! We need a complete, custom-developed website built strictly according to our specific business requirements and needs. We need custom React engineering, top performance, and built-in lead generation."
   },
   {
     label: "⚡ Full Growth & Dev Retainer",
     type: "Full Growth & Development Retainer",
     budget: "$3,000 - $5,000",
-    details: "Hi Alex! We want an all-in-one partner who can build/maintain our website and run ongoing digital marketing ad campaigns to keep our products visible and drive consistent leads."
+    details: "Hi Ascend Tech! We want an all-in-one partner who can build/maintain our website and run ongoing digital marketing ad campaigns to keep our products visible and drive consistent leads."
   }
 ];

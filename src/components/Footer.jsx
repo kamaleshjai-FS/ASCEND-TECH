@@ -44,7 +44,7 @@ export const Footer = () => {
 
           <div className="footer-cta-row">
             <a
-              href={getWhatsAppUrl("Hi Alex! I'd like to talk about collaborating on a project.")}
+              href={getWhatsAppUrl("Hi Ascend Tech! I'd like to talk about collaborating on a project.")}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary footer-cta-btn"

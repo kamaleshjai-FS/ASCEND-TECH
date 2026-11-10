@@ -118,7 +118,7 @@ export const CaseStudyModal = ({ project, onClose }) => {
             * Featured case study & client architecture. Direct inquiries via WhatsApp.
           </p>
           <a
-            href={getWhatsAppUrl(`Hi Alex! I'm interested in discussing a project similar to ${project.title}.`)}
+            href={getWhatsAppUrl(`Hi Ascend Tech! I'm interested in discussing a project similar to ${project.title}.`)}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary modal-action-btn"
