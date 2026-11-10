@@ -1,0 +1,70 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES — DIGITAL CRAFT PORTFOLIO
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-primary: #10110F;
+  --bg-secondary: #191A17;
+  --bg-surface: #20221D;
+  --bg-surface-elevated: #282A24;
+  --bg-surface-translucent: rgba(25, 26, 23, 0.88);
+
+  --text-primary: #F5F3EB;
+  --text-muted: #A5A69C;
+  --text-dim: #6E7066;
+
+  /* Signature Lime Accent */
+  --accent-lime: #D7FF64;
+  --accent-lime-hover: #E3FF8A;
+  --accent-lime-dim: rgba(215, 255, 100, 0.12);
+  --accent-lime-glow: rgba(215, 255, 100, 0.28);
+  --accent-lime-border: rgba(215, 255, 100, 0.35);
+
+  /* Light Section Contrast (Editorial Inset / Accents) */
+  --bg-light: #F2F0E8;
+  --text-dark: #171813;
+  --text-dark-muted: #5C5E54;
+  --border-light-mode: rgba(23, 24, 19, 0.12);
+
+  /* Subtle Borders & Lines */
+  --border-subtle: rgba(245, 243, 235, 0.08);
+  --border-medium: rgba(245, 243, 235, 0.15);
+  --border-active: rgba(215, 255, 100, 0.4);
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-elevated: 0 12px 40px rgba(0, 0, 0, 0.5);
+  --shadow-lime: 0 8px 30px rgba(215, 255, 100, 0.15);
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Fluid Typography Scale — Compact & Readable Across Mobile to 4K */
+  --text-xs: clamp(0.68rem, 0.65rem + 0.15vw, 0.78rem);
+  --text-sm: clamp(0.78rem, 0.75rem + 0.18vw, 0.88rem);
+  --text-base: clamp(0.88rem, 0.84rem + 0.22vw, 1rem);
+  --text-lg: clamp(0.98rem, 0.94rem + 0.3vw, 1.15rem);
+  --text-xl: clamp(1.1rem, 1.02rem + 0.45vw, 1.35rem);
+  --text-2xl: clamp(1.25rem, 1.15rem + 0.7vw, 1.7rem);
+  --text-3xl: clamp(1.45rem, 1.28rem + 1.1vw, 2.25rem);
+  --text-4xl: clamp(1.75rem, 1.5rem + 1.8vw, 3.15rem);
+  --text-display: clamp(1.95rem, 1.6rem + 2.8vw, 4.75rem);
+
+  /* Spacing: Fully Responsive Rhythm Across All Devices */
+  --container-max: 1280px;
+  --container-padding: clamp(0.75rem, 3.5vw, 2.25rem);
+  --section-gap: clamp(2rem, 4vw, 4rem);
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.2s var(--ease-out-expo);
+  --transition-normal: 0.35s var(--ease-out-expo);
+  --transition-slow: 0.6s var(--ease-out-expo);
+}

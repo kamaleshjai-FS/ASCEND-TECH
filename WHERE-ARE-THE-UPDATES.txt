@@ -1,0 +1,134 @@
+================================================================================
+                    WHERE TO FIND THE UPDATES IN THIS FOLDER
+================================================================================
+
+All updates requested have been applied directly to the files inside this folder:
+Path: c:\Users\Asus vivobook s15\Desktop\portfolio\
+
+--------------------------------------------------------------------------------
+1. HOW TO VIEW THE UPDATED WEBSITE IN YOUR BROWSER
+--------------------------------------------------------------------------------
+Simply DOUBLE-CLICK the file named:
+  >> START-PORTFOLIO.bat << (located in this folder)
+
+It will launch the website and automatically open it in your browser at:
+  http://localhost:3000/
+
+
+--------------------------------------------------------------------------------
+2. NEW: ANIMATIONS & RESPONSIVE UPGRADES APPLIED
+--------------------------------------------------------------------------------
+
+A. DYNAMIC CREATIVE CUSTOM CURSOR:
+   File location:
+   --> src\components\CustomCursor.jsx
+   Features:
+   - Precision inner dot tracking with lime glow.
+   - Smooth trailing elastic ring using physics lerp interpolation (requestAnimationFrame).
+   - Interactive hover expansion over links, buttons, inputs, pills, and cards.
+   - Dynamic contextual badge ("VIEW") when hovering over project cards.
+   - Click ripple effect on mouse down.
+   - Automatically disabled on touch/mobile devices so mobile interactions stay 100% native.
+
+B. TOP SCROLL PROGRESS BAR:
+   File location:
+   --> src\components\ScrollProgressBar.jsx
+   Features:
+   - High-performance, GPU-accelerated reading progress bar fixed at the top of the viewport.
+   - Smooth gradient from cyan to signature neon craft lime (#D7FF64).
+
+C. ANIMATED HEADINGS & SCROLL ENTRANCE REVEAL:
+   File locations:
+   --> src\hooks\useScrollReveal.js
+   --> src\styles\animations.css
+   Features:
+   - IntersectionObserver triggers smooth slide-up and fade reveals as sections enter view.
+   - Animated section titles with neon lime glow and shimmer effects.
+   - Decorative hairline meta lines that expand smoothly on reveal (width 0 -> 24px).
+   - Hero kinetic multi-line typography with interactive stroke text hover reactions.
+   - Staggered cascade delays for cards and list elements.
+
+D. MICRO-INTERACTIONS & HOVER EFFECTS EVERYWHERE:
+   - Buttons: Magnetic lift (translateY -3px), neon lime bloom shadow, arrow translation.
+   - Project Cards: Elevation lift, border glow, image scale (1.02), overlay button pop.
+   - Service & Skill Cards: 3D-feel lift, icon tilt/rotation, highlight tint.
+   - Process Timeline: Smooth step activation, lime progress bar fill.
+   - Touch/Filter Pills: Tactile press bounce and active glow.
+
+E. 100% MOBILE RESPONSIVE & REDUCED CONTENT SIZE ACROSS ALL LAYOUTS:
+   - Hero Page & Fixed Navbar:
+     * Clean semi-translucent backdrop (rgba(16, 17, 15, 0.88) + blur(14px)) at the very top of the Hero page so the navbar is 100% visible, crisp, and never blends messily with hero text or badges.
+     * Fixed CSS syntax error in hamburger button styles.
+     * Clean 1024px tablet breakpoint: seamlessly switches from full desktop links to creative mobile menu button.
+     * Narrow screens (<480px): brand badge hidden to allow AR monogram, compact "Talk ↗" button, and hamburger toggle to breathe with zero clipping.
+     * Smooth unblock on click: clicking any mobile drawer link immediately unlocks document body scroll and smoothly glides to the target section with exact mobile header offset (64px).
+     * Hero section padding-top adjusted to 84px on mobile (<768px) with responsive headline clamp(1.85rem, 8vw, 2.65rem) preventing overlap.
+   - Contact Section Full Responsive Redesign:
+     * Contact main grid: 2-column editorial on desktop, balanced 2-column sidebar grid on tablets (640px-991px), and sleek 1-column stack on mobile.
+     * Presets container: transforms into a clean 2x2 grid on mobile (<680px) and 1-column on narrow phones (<440px) with full-width tap targets.
+     * Studio information card: live clock and status row flex-wrap cleanly on narrow devices without colliding.
+     * Text inputs, select dropdowns, and textarea given 100% max-width and box-sizing to eliminate horizontal overflow.
+     * Checkbox acknowledgement wraps text cleanly with flex-shrink custom tick box.
+     * FAQ accordion headers give question text full flex space and keep chevron arrows uncompressed.
+   - Selected Works Cards:
+     * Card padding reduced to 1rem (0.85rem on ultra-narrow phones).
+     * Quick metrics transformed into a compact 2-column grid instead of 3 tall rows.
+     * Art-directed mockups (dress boutique Meta ad, B2B software ad, bespoke web code) scaled cleanly with tight typography and zero horizontal overflow.
+   - About Section:
+     * Left portrait column constrained with max-width: 440px on tablets/phones (<992px) to prevent oversized monogram boxes.
+     * Monogram inner banner scaled to 16:9 (175px height) on mobile.
+     * Studio metrics strip, superpowers cards, personal details list, career timeline, and credentials padded compactly with refined font sizes.
+   - Services Section:
+     * Service cards padded to 1.25rem 1rem on mobile with compact deliverable checklists.
+     * Engagement models grid adapts smoothly: 3 columns on desktop, 2 columns on tablet (680px-991px), and sleek 1-column mobile cards.
+   - Methodology & Trust:
+     * Process timeline steps adapt to 2 columns on tablets and compact vertical cards on mobile.
+     * Trust cards scale cleanly with 1.15rem padding and responsive partner pledge banner.
+   - Contact & FAQ:
+     * Form inputs and select dropdowns scaled for touch devices with 16px font to prevent iOS Safari auto-zoom.
+     * Sidebar WhatsApp direct channel and collaboration FAQ accordion styled compactly.
+   - Fluid clamp() typography from 320px to 4K displays with zero horizontal overflow.
+
+
+--------------------------------------------------------------------------------
+3. DIRECTORY TREE OF THIS FOLDER
+--------------------------------------------------------------------------------
+portfolio/
+├── START-PORTFOLIO.bat        <-- Double-click to launch site in browser
+├── WHERE-ARE-THE-UPDATES.txt  <-- This file
+├── README.md                  <-- Complete developer guide & code map
+├── package.json               <-- Project dependencies & scripts
+├── vite.config.js             <-- Vite configuration
+├── index.html                 <-- Main HTML entry point
+│
+├── dist/                      <-- Production compiled build (Zero errors)
+│   └── index.html
+│
+└── src/                       <-- ALL SOURCE CODE
+    ├── config.js              <-- Personal info, WhatsApp & Google Sheets config
+    ├── App.jsx                <-- Root layout with Cursor & Scroll Progress
+    ├── components/            <-- React UI components
+    │   ├── CustomCursor.jsx   <-- Dual-element smooth magnetic cursor
+    │   ├── ScrollProgressBar.jsx <-- Top scroll reading progress bar
+    │   ├── Navbar.jsx         <-- Sticky navigation & fullscreen trending drawer
+    │   ├── Hero.jsx           <-- Kinetic hero with animated headline & orbital ring
+    │   ├── SelectedWork.jsx   <-- Selected works with staggered reveal & swipe pills
+    │   ├── ProjectCard.jsx    <-- Project visual mockups & hover glow
+    │   ├── CaseStudyModal.jsx <-- Responsive case study modal
+    │   ├── About.jsx          <-- Story, career timeline & credentials
+    │   ├── Skills.jsx         <-- 3 Category cards with hoverable skill pills
+    │   ├── Services.jsx       <-- 4 Services + 3 engagement packages
+    │   ├── Process.jsx        <-- 4-Step interactive methodology
+    │   ├── TrustSection.jsx   <-- Collaboration ethos & trust cards
+    │   ├── ContactForm.jsx    <-- Interactive inquiry form, presets & live clock
+    │   └── WhatsAppButton.jsx <-- Floating WhatsApp widget with pulse
+    ├── data/
+    │   └── portfolioData.js   <-- All projects, services & career data
+    ├── hooks/
+    │   ├── useActiveSection.js<-- Tracks current active section for nav
+    │   └── useScrollReveal.js <-- IntersectionObserver scroll animation hook
+    └── styles/
+        ├── animations.css     <-- Keyframes, reveals & hover effects
+        ├── global.css         <-- Resets, responsive utilities & typography
+        └── variables.css      <-- Fluid clamp scales, color tokens & spacing
+================================================================================

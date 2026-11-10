@@ -1,0 +1,389 @@
+/* ==========================================================================
+   ANIMATIONS & TRANSITIONS — DIGITAL CRAFT PORTFOLIO
+   ========================================================================== */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseLime {
+  0% {
+    box-shadow: 0 0 0 0 rgba(215, 255, 100, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(215, 255, 100, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(215, 255, 100, 0);
+  }
+}
+
+@keyframes slowOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile Menu Keyframes */
+@keyframes mobileDrawerIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes mobileLinkIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) rotate(-0.5deg);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+    filter: blur(0);
+  }
+}
+
+@keyframes radarPing {
+  0% {
+    box-shadow: 0 0 0 0 rgba(215, 255, 100, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(215, 255, 100, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(215, 255, 100, 0);
+  }
+}
+
+@keyframes limeShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes textGleam {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+/* ==========================================================================
+   FLUID SCROLL REVEAL SYSTEM
+   ========================================================================== */
+
+/* Default Initial States */
+.reveal-init {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale-init {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-slide-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-slide-right {
+  opacity: 0;
+  transform: translateX(24px);
+  transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+/* Active Revealed States */
+.reveal-visible,
+.reveal-visible .reveal-init,
+.reveal-init.reveal-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.reveal-visible .reveal-scale-init,
+.reveal-scale-init.reveal-visible {
+  opacity: 1 !important;
+  transform: scale(1) translateY(0) !important;
+}
+
+.reveal-visible .reveal-slide-left,
+.reveal-slide-left.reveal-visible,
+.reveal-visible .reveal-slide-right,
+.reveal-slide-right.reveal-visible {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Section Meta Line Expanding Reveal */
+.section-meta-line {
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-lime);
+  opacity: 0.6;
+  transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.15s;
+}
+
+.reveal-visible .section-meta-line {
+  width: 24px;
+}
+
+/* Animated Heading Shimmer */
+.highlight-lime {
+  color: var(--accent-lime);
+  display: inline-block;
+  transition: transform 0.25s ease, text-shadow 0.25s ease;
+}
+
+.highlight-lime:hover {
+  text-shadow: 0 0 16px rgba(215, 255, 100, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Stagger Delays */
+.delay-50  { transition-delay: 50ms !important; }
+.delay-100 { transition-delay: 100ms !important; }
+.delay-150 { transition-delay: 150ms !important; }
+.delay-200 { transition-delay: 200ms !important; }
+.delay-250 { transition-delay: 250ms !important; }
+.delay-300 { transition-delay: 300ms !important; }
+.delay-400 { transition-delay: 400ms !important; }
+.delay-500 { transition-delay: 500ms !important; }
+
+/* Pulse Dot */
+.pulse-indicator {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-lime);
+  animation: pulseLime 2.2s infinite ease-out;
+}
+
+/* Subtle Orbit Component */
+.anim-orbit {
+  animation: slowOrbit 28s linear infinite;
+}
+
+.anim-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+/* Marquee Scroller */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 24s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Simple fade-in utility */
+.fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
+
+/* ==========================================================================
+   UNIVERSAL HOVER EFFECTS & MICRO-INTERACTIONS
+   ========================================================================== */
+
+/* Magnetic & Elevated Button Transitions */
+.btn-primary,
+.btn-secondary {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.btn-primary:hover::after {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(215, 255, 100, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(-1px) scale(0.99);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px) scale(1.01);
+  border-color: var(--accent-lime);
+  box-shadow: 0 8px 24px rgba(215, 255, 100, 0.15);
+}
+
+/* Card Hover Micro-Glow */
+.project-card,
+.service-card,
+.skill-category-card,
+.stat-card,
+.trust-card,
+.timeline-step-card,
+.direct-card {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, border-color, box-shadow;
+}
+
+.project-card:hover,
+.service-card:hover,
+.skill-category-card:hover,
+.trust-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent-lime-border) !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(215, 255, 100, 0.12) !important;
+}
+
+/* Interactive Pill Taps */
+.filter-pill,
+.subnav-pill,
+.preset-btn {
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.filter-pill:hover,
+.subnav-pill:hover,
+.preset-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent-lime-border);
+}
+
+.filter-pill:active,
+.subnav-pill:active,
+.preset-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Icon / Arrow Rotation on Hover */
+.title-arrow,
+.mobile-arrow,
+.social-arrow,
+.wa-arrow {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-init,
+  .reveal-scale-init,
+  .reveal-slide-left,
+  .reveal-slide-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .section-meta-line {
+    width: 24px !important;
+  }
+}
